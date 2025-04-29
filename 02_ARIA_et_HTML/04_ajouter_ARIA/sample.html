@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div>
+      <span onclick="toggleMenu()">Options</span>
+      <ul id="menu" style="display: none">
+        <li><a href="#">Profil</a></li>
+        <li><a href="#">Paramètres</a></li>
+        <li><a href="#">Déconnexion</a></li>
+      </ul>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        if (menu.style.display === "none") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div>
+      <input type="text" id="message" placeholder="Votre message" />
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+
+    <div id="notification"></div>
+
+    <script>
+      function sendMessage() {
+        const notification = document.getElementById("notification");
+        notification.innerText = "Votre message a été envoyé.";
+      }
+    </script>
+  </body>
+</html>
